@@ -8,18 +8,25 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
-
+class FirstViewController: UITableViewController {
+    //MARK: Properties
+    
+    var announcements = [Announcement]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         print("view one loaded")
-        parseJSON()
-        print ("ran parseJson")
+        parseJSON(){ yes in
+            // and here you get the "returned" value from the asynchronous task
+            print(yes)
+            print ("ran parseJson")
+            print(self.announcements)
+        }
     }
 
 
-    func parseJSON() {
+    func parseJSON(completion:  @escaping (String) -> ()){
         let url = URL(string: "https://raw.githubusercontent.com/tyounkin/volunteerCrossFit/master/high_scores.json")
         
         let task = URLSession.shared.dataTask(with: url!) {(data, response, error) in
@@ -29,41 +36,38 @@ class FirstViewController: UIViewController {
                 return
             }
             
-            guard let content = data else {
+            if let content = data {
+                print(content)
+                let json = try? JSONSerialization.jsonObject(with: content, options: [])
+                if let array = json as? [AnyObject] {
+                    
+                    for object in array {
+                        let thisName = object["firstName"] as! String
+                        let thisScore = object["score"] as! Float
+                        print(object)
+                        print(thisName)
+                        print(thisScore)
+                        
+                        let thisAnnouncement = Announcement(name: thisName, score: thisScore)
+                        print(thisAnnouncement!.name)
+                        print(thisAnnouncement!.score)
+                        self.announcements.append(thisAnnouncement!)
+                        print(self.announcements)
+                    }
+                }
+                let yes = "Yes"
+                completion(yes)
+            }
+            else {
                 print("not returning data")
                 return
             }
             
-            print(content)
-            let json = try? JSONSerialization.jsonObject(with: content, options: [])
-            if let array = json as? [Any] {
-//                if let firstObject = array.first {
-//                    // access individual object in array
-//                }
-                
-                for object in array {
-                    let thisObj = object as! Dictionary<String, AnyObject>
-                    print(object)
-                    print(thisObj["firstName"]!)
-                }
-            }
-            
-//            guard let json = (try? JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers)) as? [String: Any] else {
-//                print("Not containing JSON")
-//                return
-//            }
-//            print(json)
-//            var thisArray = [String]()
-//           if let array = json["firstName"] as? [String] {
-//               thisArray = array
-//            }
-//
-//            print(thisArray)
             
         }
-        
+
         task.resume()
-        
     }
+    
 }
 
