@@ -1,10 +1,10 @@
 [{
   "firstName": "John",
-  "score": "302"
+  "score": 302.0
 }, {
   "firstName": "Anna",
-  "score": "288"
+  "score": 288.0
 }, {
   "firstName": "Peter",
-  "score": "243"
+  "score": 243.0
 }]
