@@ -18,6 +18,7 @@
 		8C31D87621D9B0C40042DC23 /* VCFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C31D87521D9B0C40042DC23 /* VCFTests.swift */; };
 		8C9FF4A921DDE3A6009EC093 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FF4A821DDE3A6009EC093 /* ThirdViewController.swift */; };
 		8C9FF4AB21DEB360009EC093 /* AnnouncementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FF4AA21DEB360009EC093 /* AnnouncementViewController.swift */; };
+		8C9FF4AD21DF6C98009EC093 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FF4AC21DF6C98009EC093 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		8C31D87721D9B0C40042DC23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C9FF4A821DDE3A6009EC093 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		8C9FF4AA21DEB360009EC093 /* AnnouncementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementViewController.swift; sourceTree = "<group>"; };
+		8C9FF4AC21DF6C98009EC093 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				8C31D86221D9B0BF0042DC23 /* SecondViewController.swift */,
 				8C9FF4A821DDE3A6009EC093 /* ThirdViewController.swift */,
 				8C31D86421D9B0BF0042DC23 /* Main.storyboard */,
+				8C9FF4AC21DF6C98009EC093 /* SettingsViewController.swift */,
 				8C9FF4AA21DEB360009EC093 /* AnnouncementViewController.swift */,
 				8C31D86721D9B0C40042DC23 /* Assets.xcassets */,
 				8C31D86921D9B0C40042DC23 /* LaunchScreen.storyboard */,
@@ -219,6 +222,7 @@
 				8C05270D21DD9A45007C2BCA /* AnnouncementTableViewCell.swift in Sources */,
 				8C9FF4A921DDE3A6009EC093 /* ThirdViewController.swift in Sources */,
 				8C31D86121D9B0BF0042DC23 /* FirstViewController.swift in Sources */,
+				8C9FF4AD21DF6C98009EC093 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
