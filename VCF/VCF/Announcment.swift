@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class Announcement {
+class Announcement: NSObject {
     
     //MARK: Properties
     
