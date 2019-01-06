@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8C05270B21DD8E8F007C2BCA /* Announcment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C05270A21DD8E8F007C2BCA /* Announcment.swift */; };
 		8C05270D21DD9A45007C2BCA /* AnnouncementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C05270C21DD9A45007C2BCA /* AnnouncementTableViewCell.swift */; };
+		8C1102B521E1393C001026D6 /* wodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1102B421E1393C001026D6 /* wodTableViewCell.swift */; };
+		8C1102B721E1412D001026D6 /* wodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1102B621E1412D001026D6 /* wodViewController.swift */; };
 		8C31D85F21D9B0BF0042DC23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C31D85E21D9B0BF0042DC23 /* AppDelegate.swift */; };
 		8C31D86121D9B0BF0042DC23 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C31D86021D9B0BF0042DC23 /* FirstViewController.swift */; };
 		8C31D86321D9B0BF0042DC23 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C31D86221D9B0BF0042DC23 /* SecondViewController.swift */; };
@@ -19,6 +21,7 @@
 		8C9FF4A921DDE3A6009EC093 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FF4A821DDE3A6009EC093 /* ThirdViewController.swift */; };
 		8C9FF4AB21DEB360009EC093 /* AnnouncementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FF4AA21DEB360009EC093 /* AnnouncementViewController.swift */; };
 		8C9FF4AD21DF6C98009EC093 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FF4AC21DF6C98009EC093 /* SettingsViewController.swift */; };
+		8CF04F3921E104C9000625FA /* WOD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF04F3821E104C9000625FA /* WOD.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* Begin PBXFileReference section */
 		8C05270A21DD8E8F007C2BCA /* Announcment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Announcment.swift; sourceTree = "<group>"; };
 		8C05270C21DD9A45007C2BCA /* AnnouncementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementTableViewCell.swift; sourceTree = "<group>"; };
+		8C1102B421E1393C001026D6 /* wodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wodTableViewCell.swift; sourceTree = "<group>"; };
+		8C1102B621E1412D001026D6 /* wodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wodViewController.swift; sourceTree = "<group>"; };
 		8C31D85B21D9B0BF0042DC23 /* VCF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C31D85E21D9B0BF0042DC23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C31D86021D9B0BF0042DC23 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +53,7 @@
 		8C9FF4A821DDE3A6009EC093 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		8C9FF4AA21DEB360009EC093 /* AnnouncementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementViewController.swift; sourceTree = "<group>"; };
 		8C9FF4AC21DF6C98009EC093 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		8CF04F3821E104C9000625FA /* WOD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WOD.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,10 +98,13 @@
 				8C31D85E21D9B0BF0042DC23 /* AppDelegate.swift */,
 				8C31D86021D9B0BF0042DC23 /* FirstViewController.swift */,
 				8C05270A21DD8E8F007C2BCA /* Announcment.swift */,
+				8CF04F3821E104C9000625FA /* WOD.swift */,
 				8C05270C21DD9A45007C2BCA /* AnnouncementTableViewCell.swift */,
 				8C31D86221D9B0BF0042DC23 /* SecondViewController.swift */,
 				8C9FF4A821DDE3A6009EC093 /* ThirdViewController.swift */,
 				8C31D86421D9B0BF0042DC23 /* Main.storyboard */,
+				8C1102B621E1412D001026D6 /* wodViewController.swift */,
+				8C1102B421E1393C001026D6 /* wodTableViewCell.swift */,
 				8C9FF4AC21DF6C98009EC093 /* SettingsViewController.swift */,
 				8C9FF4AA21DEB360009EC093 /* AnnouncementViewController.swift */,
 				8C31D86721D9B0C40042DC23 /* Assets.xcassets */,
@@ -215,6 +224,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CF04F3921E104C9000625FA /* WOD.swift in Sources */,
+				8C1102B721E1412D001026D6 /* wodViewController.swift in Sources */,
 				8C31D86321D9B0BF0042DC23 /* SecondViewController.swift in Sources */,
 				8C31D85F21D9B0BF0042DC23 /* AppDelegate.swift in Sources */,
 				8C05270B21DD8E8F007C2BCA /* Announcment.swift in Sources */,
@@ -223,6 +234,7 @@
 				8C9FF4A921DDE3A6009EC093 /* ThirdViewController.swift in Sources */,
 				8C31D86121D9B0BF0042DC23 /* FirstViewController.swift in Sources */,
 				8C9FF4AD21DF6C98009EC093 /* SettingsViewController.swift in Sources */,
+				8C1102B521E1393C001026D6 /* wodTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +397,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XS67Z4YGEL;
 				INFOPLIST_FILE = VCF/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -402,6 +415,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XS67Z4YGEL;
 				INFOPLIST_FILE = VCF/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

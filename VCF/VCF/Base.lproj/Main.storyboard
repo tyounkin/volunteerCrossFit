@@ -99,42 +99,136 @@
             </objects>
             <point key="canvasLocation" x="4172" y="-454.72263868065971"/>
         </scene>
-        <!--Log-->
+        <!--WOD Log-->
         <scene sceneID="S48-D0-E5L">
             <objects>
                 <viewController id="XHN-CV-UWE" customClass="ThirdViewController" customModule="VCF" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Svv-LU-hlv">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fAw-sW-1lX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="Third View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="AAe-TR-eW2">
-                                <rect key="frame" x="106" y="312" width="163" height="44"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Loaded by ThirdViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4b-z8-9WI">
-                                <rect key="frame" x="87" y="364" width="200" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="I4b-z8-9WI" firstAttribute="top" secondItem="AAe-TR-eW2" secondAttribute="bottom" constant="8" id="IFy-dB-arJ"/>
-                            <constraint firstItem="I4b-z8-9WI" firstAttribute="centerX" secondItem="Svv-LU-hlv" secondAttribute="centerX" id="rtW-OX-3M0"/>
-                            <constraint firstItem="AAe-TR-eW2" firstAttribute="centerY" secondItem="Svv-LU-hlv" secondAttribute="centerY" id="t6c-74-0YL"/>
-                            <constraint firstItem="AAe-TR-eW2" firstAttribute="centerX" secondItem="Svv-LU-hlv" secondAttribute="centerX" id="wVo-Pw-MWu"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="SLy-FD-Th7"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Log" image="log" id="qOi-q4-NPM"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="wodTableViewCell" rowHeight="90" id="yXt-TR-dSp" customClass="wodTableViewCell" customModule="VCF" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yXt-TR-dSp" id="mBT-sh-jzG" customClass="wodTableViewCell" customModule="VCF" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Aug. 18 2019" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qr8-RC-30w">
+                                            <rect key="frame" x="16" y="26" width="119" height="36"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zix-Np-OPi">
+                                            <rect key="frame" x="287" y="17" width="72" height="55"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wod name" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfr-hY-d97">
+                                            <rect key="frame" x="143" y="17" width="130" height="55"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dateLabel" destination="qr8-RC-30w" id="WUP-ke-XsD"/>
+                                    <outlet property="scoreLabel" destination="Zix-Np-OPi" id="O5c-Rd-L6Y"/>
+                                    <outlet property="wodNameLabel" destination="jfr-hY-d97" id="l6b-S8-O4O"/>
+                                    <segue destination="x3n-fT-gLD" kind="show" identifier="viewWodSegue" id="ILM-s7-vdK"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="WOD Log" id="v26-BG-v6E">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="qnb-qE-Aej">
+                            <connections>
+                                <segue destination="wnh-cE-Ur5" kind="presentation" identifier="addWod" id="9Ax-iz-PYu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B4f-WZ-Duo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-10.4" y="1077.2113943028487"/>
+            <point key="canvasLocation" x="928.79999999999995" y="1077.2113943028487"/>
+        </scene>
+        <!--New WOD-->
+        <scene sceneID="Qrv-HA-N5J">
+            <objects>
+                <exit id="dvc-od-aab" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M0X-Ju-HxN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="x3n-fT-gLD" customClass="wodViewController" customModule="VCF" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wqj-HY-S2o">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVD-55-Zch">
+                                <rect key="frame" x="34" y="270" width="119" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WOD Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPO-h9-Mw1">
+                                <rect key="frame" x="16" y="110" width="150" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="WOD Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i8k-X3-ZZu">
+                                <rect key="frame" x="16" y="133" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Score" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9EV-GE-yUa">
+                                <rect key="frame" x="34" y="308" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="vcx-Ud-dAc">
+                                <rect key="frame" x="0.0" y="398" width="375" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="568413514.10107195">
+                                    <!--2019-01-05 20:38:34 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Mst-ji-RPF"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="New WOD" id="Sgf-gi-YFK">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="gh9-cF-xTj">
+                            <connections>
+                                <action selector="cancel:" destination="x3n-fT-gLD" id="fVX-n1-Vzx"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="kOk-Nn-zNm">
+                            <connections>
+                                <segue destination="dvc-od-aab" kind="unwind" unwindAction="unwindToWODListWithSender:" id="IZe-Y1-er1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="datePicker" destination="vcx-Ud-dAc" id="Ng5-74-ubU"/>
+                        <outlet property="nameTextField" destination="i8k-X3-ZZu" id="dEr-ta-mFy"/>
+                        <outlet property="saveButton" destination="kOk-Nn-zNm" id="cCU-Gi-29A"/>
+                        <outlet property="scoreTextField" destination="9EV-GE-yUa" id="z0V-Zy-Jkr"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2928.8000000000002" y="1076.311844077961"/>
         </scene>
         <!--Profile-->
         <scene sceneID="wg7-f3-ORb">
@@ -261,7 +355,7 @@
                     <connections>
                         <segue destination="tL4-08-6HB" kind="relationship" relationship="viewControllers" id="maZ-aI-E6B"/>
                         <segue destination="bdO-7L-mXw" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="XHN-CV-UWE" kind="relationship" relationship="viewControllers" id="Bih-og-ym5"/>
+                        <segue destination="e22-Rg-71E" kind="relationship" relationship="viewControllers" id="Bih-og-ym5"/>
                         <segue destination="28N-Pn-YcN" kind="relationship" relationship="viewControllers" id="WBI-gF-Xsp"/>
                         <segue destination="Muh-IU-FMq" kind="relationship" relationship="viewControllers" id="hr5-yd-2fE"/>
                     </connections>
@@ -342,6 +436,43 @@
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
         </scene>
+        <!--Log-->
+        <scene sceneID="DIw-FJ-Kfu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e22-Rg-71E" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Log" image="log" id="qOi-q4-NPM"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uem-Ip-4gj">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XHN-CV-UWE" kind="relationship" relationship="rootViewController" id="Gfe-zq-JlL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="daN-a1-vLi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10.4" y="1077.2113943028487"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="32Z-5r-iXQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wnh-cE-Ur5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="H5L-iA-pyp">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="x3n-fT-gLD" kind="relationship" relationship="rootViewController" id="SQm-6n-raw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tUY-Ii-1JY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2034" y="1438"/>
+        </scene>
     </scenes>
     <resources>
         <image name="News" width="45" height="39"/>
@@ -352,6 +483,7 @@
         <image name="wods" width="37.5" height="36"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="ILM-s7-vdK"/>
         <segue reference="6DN-eg-9Cv"/>
     </inferredMetricsTieBreakers>
 </document>
